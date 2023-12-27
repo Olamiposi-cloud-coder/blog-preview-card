@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BackgroundColor: hsl(47, 88%, 63%);
+    --H1Color: hsl(0, 0%, 7%);
+    --paragraphColor: hsl(0, 0%, 50%);
+    --containerBgColor: hsl(0, 0%, 100%);
+    --attributionColor: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "secondFont";
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "paragraphFont";
+    src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+body {
+    background-color: var(--BackgroundColor);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.avater img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--containerBgColor);
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px var(--H1Color)
+}
+
+.btn {
+    background-color: var(--BackgroundColor);
+    color: var(--H1Color);
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    display: block;
+    margin: 15px 0;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.about-btn {
+    font-family: "paragraphFont", sans-serif;
+    color: var(--H1Color);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "secondFont", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+h1:hover {
+    color: var(--BackgroundColor);
+    cursor: pointer;
+}
+
+.title-text {
+    font-family: "paragraphFont", sans-serif;
+    font-size: 15px;
+    color: var(--paragraphColor);
+}
+
+.avater {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avater p {
+    font-family: "secondFont", sans-serif;
+
+}
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--attributionColor); 
+    font-family: "Figtree", sans-serif;
+}
